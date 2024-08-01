@@ -48,6 +48,7 @@ input {
   background-color: #292929;
   border: none;
   font-size: 1rem;
+  color: white;
 }
 .signup-button {
   padding: 10px;

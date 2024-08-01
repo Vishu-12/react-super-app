@@ -107,6 +107,9 @@ export default function SignUp() {
             placeholder="Name"
             onChange={onChangeHandler}
             value={formData?.name}
+            style={{
+              border: `1px solid ${erros.name.length > 0 ? "red" : "#72db73"}`,
+            }}
           />
           {erros.name && (
             <p className="error-message">This field is required</p>
@@ -117,6 +120,11 @@ export default function SignUp() {
             placeholder="UserName"
             onChange={onChangeHandler}
             value={formData?.username}
+            style={{
+              border: `1px solid ${
+                erros.username.length > 0 ? "red" : "#72db73"
+              }`,
+            }}
           />
           {erros.username && (
             <p className="error-message">This field is required</p>
@@ -127,6 +135,9 @@ export default function SignUp() {
             placeholder="Email"
             onChange={onChangeHandler}
             value={formData?.email}
+            style={{
+              border: `1px solid ${erros.email.length > 0 ? "red" : "#72db73"}`,
+            }}
           />
           {erros.email && (
             <p className="error-message">This field is required</p>
@@ -137,6 +148,11 @@ export default function SignUp() {
             placeholder="Mobile"
             onChange={onChangeHandler}
             value={formData?.mobile}
+            style={{
+              border: `1px solid ${
+                erros.mobile.length > 0 ? "red" : "#72db73"
+              }`,
+            }}
           />
           {erros.mobile && (
             <p className="error-message">This field is required</p>
